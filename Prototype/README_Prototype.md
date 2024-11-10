@@ -41,8 +41,9 @@
 
 ### How to Access the Prototype
 
-**Prototype URL:** https://sprojp14-zainab-fatimas-projects.vercel.app/?vercelToolbarCode=GtmZ5ScQ17tp7Vm
- 
+**Prototype URL:** use this link 
+https://sproj-p14-shop-savvy.vercel.app/
+
 **Credentials:**  
 - Username: alicejohnson@example.com  
 - Password: password123 
