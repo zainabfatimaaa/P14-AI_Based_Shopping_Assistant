@@ -1,0 +1,139 @@
+/* Main container for the SignIn component */
+.signin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #eef2f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Left section for branding */
+.signin-left {
+  flex: 1;
+  background-color: #283593;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.website-name {
+  font-size: 32px;          /* Increased font size */
+  font-weight: 800;         /* Heavier font weight for bold effect */
+  color: rgb(198, 185, 209);
+  
+  text-decoration: none;
+}
+
+.signin-left h2 {
+  font-size: 36px;
+  margin-top: 10px;
+  color: #bbdefb;
+}
+
+/* Right section for the form */
+.signin-right {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Sign-up link container */
+.signup-link-container {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.signup-link {
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-link a {
+  color: #283593;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Heading */
+.signin-right h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Error message styling */
+.error {
+  color: #e57373;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group input:focus {
+  border-color: #283593;
+  outline: none;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #283593;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a237e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signin-container {
+    flex-direction: column;
+  }
+  
+  .signin-left, .signin-right {
+    width: 100%;
+    flex: none;
+  }
+  
+  .signin-left {
+    padding: 20px;
+  }
+
+  .signin-right {
+    padding: 20px;
+  }
+}
