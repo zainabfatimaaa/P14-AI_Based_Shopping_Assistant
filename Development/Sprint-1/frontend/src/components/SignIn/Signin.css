@@ -1,0 +1,106 @@
+/* Main container for the SignIn component */
+.signin-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.signin-form-container {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.signin-title {
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.error {
+  color: #e57373;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.forgot-password a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff; /* Text color */
+  background-color: #000; /* Change this to any desired color */
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.signin-btn:hover {
+  background-color: #333; /* Change hover color if desired */
+}
+
+.create-account-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.create-account-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.create-account-link a:hover {
+  text-decoration: underline;
+}

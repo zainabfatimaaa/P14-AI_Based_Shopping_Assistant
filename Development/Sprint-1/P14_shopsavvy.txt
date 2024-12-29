@@ -1,0 +1,71 @@
+Project: ShopSavvy_P14
+Team: 
+25100002	Ahmad Kashif Jabbar
+25100105	Husnain Ali
+25100179	Musa Aftab Ahmad
+25100229	Syed Messam Ali
+25100208	Zainab Fatima
+
+
+SPRINT-1 SUBMISSION GUIDELINES
+
+1. Properly tested working system deployed on an online hosting platform.
+2. Code with readable comments uploaded in “Development/Sprint-1” folder of your project’s Github repository.
+3. 3-4 minutes video that explains the functionality of your system developed so far. This must be uploaded in “Sprint-1” folder of your project’s Github repository.
+4. Updated architecture and data model must be uploaded in the respective folders on Github.
+5. Test case execution report. 
+6. Update project schedule.  
+7. This "Readme" file must be uploaded in Sprint-1 folder. 
+
+
+
+------------------------------------------------------------------------------------------------
+
+LIST OF REQUIREMENTS COMPLETED IN THE SPRINT
+
+1	Scrape data from five websites, focusing on product details, categories, and images. One website has already been scraped; complete the remaining four.
+2	Improve the UI of the website such as product display for better visuals and user experience and refine the wish list feature.
+
+3	Develop an intuitive navigation bar similar to top clothing websites.
+5	Introduce a smart search feature allowing multiple keywords to refine product searches.
+6	Track user history, including clicks and browsing behavior, to gather insights for personalization.
+8	Optimize the development done in Prototype 1:  Optimize data fetching to reduce delays, fix and enhance the wishlist functionality
+
+
+------------------------------------------------------------------------------------------------
+
+
+LIST OF REQUIREMENTS COMPLETED SO FAR
+
+1	Scrape data from five websites, focusing on product details, categories, and images. One website has already been scraped; complete the remaining four.
+2	Improve the UI of the website such as product display for better visuals and user experience and refine the wish list feature.
+
+3	Develop an intuitive navigation bar similar to top clothing websites.
+4	Introduce a smart search feature allowing multiple keywords to refine product searches.
+5	Track user history, including clicks and browsing behavior, to gather insights for personalization.
+6	Optimize the development done in Prototype 1:  Optimize data fetching to reduce delays, fix and enhance the wishlist functionality
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+HOW TO ACCESS THE SYSTEM
+
+Use the following URL to visit the deployed webiste
+
+https://sprojp14-git-main-zainab-fatimas-projects.vercel.app/
+
+User Credentials:
+email: alicejohnson@example.com
+password: password123
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+

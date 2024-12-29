@@ -1,0 +1,171 @@
+/* Main container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Georgia', serif;
+  position: relative;
+}
+
+/* Shop Savvy link */
+.website-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.website-name:hover {
+  text-decoration: underline;
+}
+
+/* Right form container */
+.signup-right {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Form title */
+.signup-right h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+/* Form labels */
+.form-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+/* Input fields */
+input, select {
+  width: 100%;
+  max-width: 550px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Georgia', serif;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #000;
+}
+
+/* Dropdown (Gender) */
+select {
+  appearance: none;
+  background-color: #fff;
+  text-align: left;
+}
+
+/* Button styling */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  max-width: 550px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Error and success messages */
+.error, .success {
+  font-size: 14px;
+  color: #e57373;
+  margin-bottom: 10px;
+}
+
+/* Member link styling */
+.member-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.member-link a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-link a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-aligns the form-group horizontally */
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center-aligns inputs within the group */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Centers the group container horizontally */
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-group input::placeholder,
+.form-group select {
+  color: #000; /* Black placeholder text for consistency */
+}
+
+.form-group select {
+  appearance: none; /* Remove default dropdown arrow for consistency */
+  background-color: #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 20px;
+  }
+
+  .signup-right {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
