@@ -1,0 +1,208 @@
+/* Main header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: white; /* Light background for a modern look */
+  color: black;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #ddd; /* Subtle border for separation */
+  position: relative; /* For dropdown positioning */
+  z-index: 100;
+}
+
+/* Logo styling */
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Menu container */
+.menu-container {
+  position: absolute;
+  left: 10px;
+}
+
+/* Menu icon (Hamburger) styling */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  opacity: 0.6;
+}
+
+.menu-icon:hover {
+  color: #4a90e2; /* Highlight on hover */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 40px; /* Adjust dropdown position below the menu icon */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* Fixed width for consistent dropdown */
+}
+
+.dropdown-menu span {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu span:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+  color: #4a90e2; /* Highlight color */
+}
+
+/* Submenu styling */
+.category-dropdown {
+  position: absolute;
+  top: 40px; /* Adjust dropdown position below the menu icon */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* Fixed width for consistent dropdown */
+}
+
+/* Header icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Category dropdown styling */
+.category-dropdown {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 80px; /* Adjusted based on dropdown positioning */
+  left: 0;
+  z-index: 1001;
+}
+
+.category-dropdown h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.category-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-dropdown li {
+  font-size: 14px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-dropdown li:hover {
+  background-color: #f5f5f5; /* Light gray background */
+  color: #4a90e2; /* Highlight color */
+}
+
+/* Search icon */
+.search-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* User and wishlist icons */
+.user-icon,
+.wishlist-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Search bar container */
+.search-bar {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 4px;
+}
+
+.search-bar .close-btn {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+}
+
+.search-bar .close-btn:hover {
+  color: #000;
+}
+
+/* Hover effect for icons */
+.search-icon img {
+  transition: transform 0.2s ease;
+}
+
+.search-icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .menu-container {
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+
+  .category-dropdown {
+    width: 100%; /* Make dropdown take full width on smaller screens */
+    left: 0;
+  }
+}
