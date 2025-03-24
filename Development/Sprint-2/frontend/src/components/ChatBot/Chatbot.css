@@ -1,0 +1,114 @@
+/* Chatbot container */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 4000px; /* Max width of the chat */
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat window for displaying messages */
+.chat-window {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+/* Individual chat message styling */
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* Left-aligned messages (Bot's messages) */
+.chat-message.bot {
+    background-color: #e5e5e5; /* Bot's background color */
+    margin-left: 10px;
+    margin-right: auto;
+    border-radius: 10px 10px 10px 0;
+}
+
+/* Right-aligned messages (User's messages) */
+.chat-message.user {
+    background-color: #0a7a55; /* User's background color */
+    color: white;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 10px 10px 0 10px;
+}
+
+/* Text inside each message */
+.message-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Images container for product images */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Group of images for each product */
+.image-set {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Image styling */
+.message-image {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Typing indicator */
+.typing-indicator {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+
+/* Input area with a text box and send button */
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Text input field */
+input {
+    width: 85%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Send button */
+button {
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #128c7e; /* Darker green on hover */
+}
