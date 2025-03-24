@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../../../fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(110, 156, 182);
+  position: relative; 
+  border-radius: 0%;
+}
+
+.signup-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40.2%; /* This matches the width of the image container */
+  height: 100%; /* This spans the full height of the container */
+  background-image: url('./cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px); /* Adds blur effect */
+  opacity: 1; /* Fades the image to make it subtle */
+  z-index: 0; /* Keeps it behind the content */
+}
+
+.signup-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40.2%; /* Matches the width of the image container */
+  height: 100%;
+  background-color: rgba(116, 182, 218, 0.4); /* Semi-transparent red */
+  z-index: 0; /* Ensure the red overlay is on top of the background image */
+}
+
+.signup-box {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; /* So content stays on top of the blurred background */
+  z-index: 1; /* Ensures the box appears above the pseudo-element */
+}
+
+.signup-image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  box-sizing: border-box;
+  line-height: 0;
+}
+
+.signup-right {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Keep content at the top */
+  padding: 60px;
+  position: relative;
+}
+
+.shop-savvy-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+  margin-top: -20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #ccc; /* Bottom border instead of full box */
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-family: "Montserrat", serif;
+}
+
+.input-icon {
+  font-size: 18px;
+  color: #777;
+  margin-right: 10px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  font-family: "Montserrat", serif;
+}
+
+.signup-form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  background: transparent;
+  font-family: "Montserrat", serif;
+}
+
+.signup-form input::placeholder {
+  color: #aaa;
+}
+
+
+button {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 10px;
+  font-family: "Montserrat", serif;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.error {
+  font-size: 14x;
+  color: #ff2929;
+  margin-bottom: 10px;
+  font-family: "Montserrat", serif;
+}
+
+
+.success {
+  font-size: 14px;
+  color: #30c462;
+  margin-bottom: 10px;
+  font-family: "Montserrat", serif;
+}
+
+/* The rest of your styles stay the same */
+.auth-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 2px 0;
+}
+
+.auth-footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+  margin-bottom: 1px; /* Adds space between the line and the footer */
+}
+
+.auth-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+}
+
+.auth-option {
+  cursor: pointer;
+  color: lightgrey;
+  font-weight: bold;
+  width: 50%; 
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 15px;
+  transition: color 0.3s ease;
+  font-family: "Montserrat", serif;
+}
+
+.auth-option.active {
+  color: black;
+  border-bottom: 5px solid black; 
+}
+
+.signup-container > Header {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  /* margin-left: 100px;
+  padding-left: 50%; */
+  z-index: 10; /* Ensure it appears above everything */
+  width: 98%;
+  background: none;
+  color: white;
+  border-bottom: none; /* Subtle border for separation */
+
+  
+}
