@@ -1,0 +1,120 @@
+.products-container {
+    padding: 20px;
+}
+
+.options {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.products-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr); /* Default 4 products per row */
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    height: 670px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    background-color: #f1f1f1;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    filter: brightness(0.8);  /* Slight grey effect on hover */
+}
+
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-brand,
+.product-price {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-actions {
+    position: absolute;
+    bottom: 3px; /* Adjust for the desired vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* aligns them vertically */
+    gap: 10px; /* space between icons */
+    margin-top: 10px;
+  }
+  
+  .wishlist-button,
+  .external-link-button {
+    background: none !important;  /* Remove background */
+    border: none !important;      /* Remove border */
+    padding: 0;
+    margin: 0;
+    font-size: 20px;              /* Icon size */
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wishlist-button:focus,
+  .external-link-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background: none !important;
+  }
+
+.wishlist-button:hover svg {
+  color: #a6a29e;
+}
+
+.external-link-button:hover svg {
+  color: #007bff;
+}
+
+.wishlist-button.active svg {
+  color: black;
+}
+
