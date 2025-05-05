@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../../../fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(110, 156, 182);
+  position: relative; 
+  border-radius: 0%;
+}
+
+.signin-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40.2%; 
+  height: 100%; 
+  background-image: url('./cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px); 
+  opacity: 1; 
+  z-index: 0; 
+}
+
+.signin-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40.2%; 
+  height: 100%;
+  /* background-color: rgba(0, 87, 153, 0.4);  */
+  /* background-color: rgba(144, 181, 239, 0.4);  */
+  background-color: rgba(110, 156, 182, 0.299);; 
+  z-index: 0; 
+}
+
+.signin-box {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; 
+  z-index: 1; 
+}
+
+.signin-image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  box-sizing: border-box;
+  line-height: 0;
+}
+
+.signin-right {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Keep content at the top */
+  padding: 60px;
+  position: relative;
+}
+
+.shop-savvy-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: -20px;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.trend-message {
+  align-items: left;
+  padding-right: 220px;
+  margin-top: -40px;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.trend-message-second {
+  align-items: left;
+  color: rgb(110, 156, 182);
+  margin-bottom: 50px;
+  /* padding-left: 160px; */
+  padding-right: 143px;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #ccc; /* Bottom border instead of full box */
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-family: "Montserrat", serif;
+}
+
+.input-icon {
+  font-size: 18px;
+  color: #777;
+  margin-right: 10px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  font-family: "Montserrat", serif;
+}
+
+.signin-form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  background: transparent;
+  font-family: "Montserrat", serif;
+}
+
+.signin-form input::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 10px;
+  font-family: "Montserrat", serif;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.error {
+  font-size: 17px;
+  color: #ff2929;
+  margin-bottom: 10px;
+  font-family: "Montserrat", serif;
+}
+
+
+.success {
+  font-size: 17px;
+  color: #30c462;
+  margin-bottom: 10px;
+  font-family: "Montserrat", serif;
+}
+
+.auth-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3px 0;
+}
+
+.auth-footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+}
+
+.auth-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.auth-option {
+  cursor: pointer;
+  color: lightgrey;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 15px;
+  font-family: "Montserrat", serif;
+}
+
+.auth-option a {
+  color: black;
+  text-decoration: none;
+}
+
+.auth-option a:hover {
+  text-decoration: underline;
+}
+
+.auth-option.active {
+  color: #333;
+  border-bottom: 4px solid #333; /* Active state with underline */
+}
+
+.signin-container > Header {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  /* margin-left: 100px;
+  padding-left: 50%; */
+  z-index: 10;
+  width: 98%;
+  background: none;
+  color: white;
+  border-bottom: none; 
+
+  
+}
+
+@media (max-width: 768px) {
+  .signin-container {
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(
+      rgba(110, 156, 182, 0.6),
+      rgba(110, 156, 182, 0.6)
+    ),
+    url('/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  .signin-container::before,
+  .signin-container::after {
+    display: none;
+  }
+
+  .signin-box {
+    background-color: rgba(255, 255, 255, 0.95); /* add slight white overlay if needed */
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .signin-right {
+    width: 100%;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shop-savvy-title {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .trend-message,
+  .trend-message-second {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .signin-form {
+    max-width: 100%;
+  }
+
+  .input-container {
+    padding: 8px 0;
+  }
+
+  button {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .auth-footer-container {
+    position: static;
+    padding-top: 20px;
+  }
+
+  .auth-option {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .signin-container > Header {
+    position: static;
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+
+  }
+
+  .signin-image {
+    display: none; /* Completely hide image for mobile */
+  }
+}
+
+.shop-savvy-title a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Glacial Indifference', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.shop-savvy-title a:hover {
+  color: rgb(110, 156, 182);
+  text-decoration: none; /* also ensure no underline on hover */
+}

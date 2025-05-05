@@ -1,0 +1,491 @@
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../../../fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Glacial Indifference', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.filters-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 20px;
+  width: 180px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 40px; /* Reduce the distance from the top */
+}
+
+/* Hover effect */
+.filters-container select:hover {
+  background: #090909;
+}
+
+/* Active state */
+.filters-container select:focus {
+  outline: none;
+  border: 2px solid #007bff;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* Responsive grid for products */
+.products-grid {
+  display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive columns */
+}
+
+/* Individual product card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  text-align: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 20px; 
+  min-height: 750px; 
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: #80a5c4;
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%;
+  height: auto; /* Keep the image responsive */
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s ease;
+  margin-bottom: 10px; /* Spacing below the image */
+}
+
+.product-card:hover .product-image {
+  filter: brightness(0.8); /* Grey effect on hover */
+}
+
+/* Product info section */
+.product-info {
+  padding: 10px;
+  gap: 10px;
+  text-align: center;
+  flex: 1; /* Expands to fill space */
+  font-family: 'Glacial Indifference', sans-serif;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-brand,
+.product-price {
+  font-size: 16px;
+  color: #555;
+  margin: 0; /* No margins for consistent spacing */
+}
+
+/* Product actions */
+.product-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.icon-container {
+display: flex;
+justify-content: center;
+align-items: center; /* aligns them vertically */
+gap: 10px; /* space between icons */
+margin-top: 10px;
+}
+
+.wishlist-button,
+.external-link-button {
+background: none !important;  /* Remove background */
+border: none !important;      /* Remove border */
+padding: 0;
+margin: 0;
+font-size: 20px;              /* Icon size */
+color: #333;
+cursor: pointer;
+outline: none;
+box-shadow: none;
+display: flex;
+align-items: center;
+justify-content: center;
+/* margin-bottom: 40px; */
+}
+
+.wishlist-button:focus,
+.external-link-button:focus {
+outline: none !important;
+box-shadow: none !important;
+background: none !important;
+}
+
+.wishlist-button:hover svg {
+color: #a6a29e;
+}
+
+.external-link-button:hover svg {
+color: #007bff;
+}
+
+.wishlist-button.active svg {
+color: black;
+}
+
+/* Buttons styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Custom select styling */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 20px;
+  background: none;
+  border: 2px solid #000;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Color swatches (if used) */
+.color-swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Size options (if used) */
+.size-option {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Wishlist button styling */
+.wishlist-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust icon size for better visibility */
+  color: #555; /* Default gray color */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Active state: Heart becomes red */
+.wishlist-button.active {
+  color: #ff0000; /* Bright red color for clicked state */
+  transform: scale(1.2); /* Slight zoom effect for better feedback */
+}
+
+/* Hover effect */
+.wishlist-button:hover {
+  color: #007bff; /* Blue color when hovered over */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Smooth icon size transition on hover and active states */
+.wishlist-button i {
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Pagination container styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Spacing between buttons */
+  margin-top: 20px;
+}
+
+/* Pagination buttons styling */
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ddd; /* Light gray border */
+  background-color: #fff; /* White background */
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444; /* Dark gray text */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Active page button */
+.pagination button.active {
+  background-color: #9a9b9b; /* Blue background */
+  color: #fff; /* White text */
+  border-color: #000000; /* Match background */
+}
+
+/* Disabled buttons (Previous/Next) */
+.pagination button:disabled {
+  background-color: #f9f9f9; /* Light gray background */
+  color: #bbb; /* Faded text */
+  cursor: not-allowed;
+}
+
+/* Hover effect */
+.pagination button:hover:not(:disabled) {
+  background-color: #ddd; /* Light gray hover background */
+  border-color: #bbb; /* Slightly darker border */
+  color: #222; /* Slightly darker text */
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 25px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  width: 500px; /* Increased width for more horizontal space */
+  max-width: 90%; /* Ensure the width doesn't exceed container */
+}
+
+
+.filter-icon-wrapper {
+  margin-top: -50px;
+  padding: 10px;
+  margin-left: 1600px;
+  cursor: pointer;
+}
+
+.filter-icon {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: -12px;
+}
+
+.filter-icon:hover {
+  transform: scale(1.1);
+}
+
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 0, 0, 0.527); /* just dim the background */
+  z-index: 998;
+}
+
+.filters-sidebar {
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  z-index: 999;
+  padding: 20px;
+} */
+
+
+.filters-popover {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.top-picks-section {
+  margin-bottom: 110px;
+}
+
+.recently-viewed-section {
+  margin-bottom: 110px; 
+  font-family: 'Glacial Indifference', sans-serif;
+  /* background-color: hsl(203, 27%, 90%); */
+  margin-top: -20px;
+  margin-left: -22px;
+  margin-right: -22px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.section-heading {
+  margin-bottom: 35px;
+  font-size: 1.8rem;
+  font-weight: 1000;
+  font-family: 'Glacial Indifference', sans-serif;
+}
+
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.all-products-section { 
+  padding-top: -50px;
+}
+
+.view-all-button {
+  width: 25vw;
+  max-width: 250px;
+  min-width: 120px;
+  height: auto; /* Default height */
+  min-height: 50px; /* Minimum height */
+  background-color: #000;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.view-all-button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .search-filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .products-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* Force 2 columns */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .product-card {
+    min-height: auto;
+    padding: 15px;
+    max-height: 400px;
+  }
+
+  .product-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    font-size: 14px;
+  }
+
+  .product-actions {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .filters-container select {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .filter-icon-wrapper {
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .filters-popover {
+    width: 100%;
+    right: 0;
+    top: 60px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .view-all-button {
+    width: 100%;
+    font-size: 1rem;
+    min-height: 45px;
+  }
+
+  .recently-viewed-section {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  
+}
+

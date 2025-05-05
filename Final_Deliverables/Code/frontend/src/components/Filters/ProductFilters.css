@@ -1,0 +1,83 @@
+/* src/components/ProductFilters.css */
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../../../fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo h3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    cursor: pointer;
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+
+.filters-panel {
+    width: 400px;
+    font-family: 'Glacial Indifference', sans-serif;
+    padding: 15px;
+    font-size: 19px;
+    padding-left: 30px;
+    background-color: #fafafa;
+    border-left: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.padding {
+    padding-top: 65px;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+}
+
+.filter-section label {
+    display: block;
+    margin: 5px 0;
+    
+}
+
+.reset-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter-section-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  
+  .arrow {
+    transition: transform 0.2s ease-in-out;
+    padding-right: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .filter-options label {
+    font-weight: normal;
+    padding-left: 5px;
+  }
+
+  .filter-section label input {
+    margin-right: 10px;
+  }
+  
+
+  
